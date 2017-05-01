@@ -210,76 +210,90 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="181" max="-2" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="savings2" min="-2" max="-2" attributes="0"/>
-                      <Component id="life2" min="-2" max="-2" attributes="0"/>
-                      <Component id="transport2" min="-2" max="-2" attributes="0"/>
-                      <Component id="housing2" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="savingspercent" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                          <Component id="savingsbar" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="lifepercent" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                          <Component id="lifebar" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="transportpercent" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                          <Component id="transportbar" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
+                          <Component id="housing2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Component id="housingpercent" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                          <Component id="housingbar" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                          <Component id="housingbar" min="-2" pref="17" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="savings2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="savingspercent" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="life2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="lifepercent" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="transport2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="transportpercent" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="296" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="155" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                          <Component id="savingsbar" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="lifebar" min="-2" pref="23" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="transportbar" alignment="0" min="-2" pref="13" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="181" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="housing2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="housingbar" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="housingpercent" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="housing2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="housingpercent" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="housingbar" min="-2" pref="14" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="transport2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="transportbar" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="transportpercent" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="transport2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="transportpercent" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="transportbar" min="-2" pref="14" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace pref="64" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="life2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lifebar" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lifepercent" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lifebar" alignment="0" min="-2" pref="14" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="savings2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="savingsbar" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="savingspercent" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="46" pref="46" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="savings2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="savingspercent" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="savingsbar" alignment="0" min="-2" pref="14" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="20" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -326,6 +340,7 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="ff" red="ff" type="rgb"/>
             </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
             <Property name="opaque" type="boolean" value="true"/>
           </Properties>
         </Component>
@@ -346,12 +361,24 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="housingpercent">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="   "/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="transportpercent">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="        "/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lifepercent">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="   "/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="savingspercent">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="    "/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
