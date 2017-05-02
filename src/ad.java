@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *April 2
+ *family planner program that manipulates data and tells a user how theyre doing financially
+ *Netbeans' weird formatting causes the bars to resize to the size of the first bar
  */
 
 /**
@@ -55,10 +55,10 @@ public class ad extends javax.swing.JFrame {
         lifepercent = new javax.swing.JLabel();
         savingspercent = new javax.swing.JLabel();
         textpanel = new javax.swing.JPanel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
+        housingoutput = new javax.swing.JLabel();
+        transportoutput = new javax.swing.JLabel();
+        lifeoutput = new javax.swing.JLabel();
+        savingsoutput = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -116,7 +116,7 @@ public class ad extends javax.swing.JFrame {
                     .addGroup(inputpanelLayout.createSequentialGroup()
                         .addGap(75, 75, 75)
                         .addComponent(enter)))
-                .addContainerGap(196, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         inputpanelLayout.setVerticalGroup(
             inputpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -190,109 +190,107 @@ public class ad extends javax.swing.JFrame {
         graphpanelLayout.setHorizontalGroup(
             graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(graphpanelLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
+                .addGap(26, 26, 26)
                 .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(graphpanelLayout.createSequentialGroup()
-                        .addComponent(housing2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(housingpercent)
-                        .addGap(45, 45, 45)
-                        .addComponent(housingbar, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(graphpanelLayout.createSequentialGroup()
-                        .addComponent(savings2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(savingspercent))
-                    .addGroup(graphpanelLayout.createSequentialGroup()
+                        .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(graphpanelLayout.createSequentialGroup()
+                                    .addComponent(life2)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(lifepercent))
+                                .addGroup(graphpanelLayout.createSequentialGroup()
+                                    .addComponent(savings2)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(savingspercent)))
+                            .addGroup(graphpanelLayout.createSequentialGroup()
+                                .addComponent(housing2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(housingpercent)
+                                .addGap(3, 3, 3)))
                         .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(graphpanelLayout.createSequentialGroup()
-                                .addComponent(life2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lifepercent))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 188, Short.MAX_VALUE)
+                                .addComponent(jLabel7)
+                                .addGap(181, 181, 181))
                             .addGroup(graphpanelLayout.createSequentialGroup()
-                                .addComponent(transport2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(transportpercent)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap(296, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, graphpanelLayout.createSequentialGroup()
-                .addContainerGap(155, Short.MAX_VALUE)
-                .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(savingsbar, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lifebar, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(transportbar, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(181, 181, 181))
+                                .addGap(66, 66, 66)
+                                .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(housingbar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(lifebar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(transportbar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(savingsbar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addGroup(graphpanelLayout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(transport2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(transportpercent)
+                        .addContainerGap())))
         );
         graphpanelLayout.setVerticalGroup(
             graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, graphpanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(graphpanelLayout.createSequentialGroup()
+                        .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(graphpanelLayout.createSequentialGroup()
+                                .addComponent(savingsbar, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(transport2)
+                                        .addComponent(transportpercent))
+                                    .addComponent(transportbar, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(life2)
+                                .addComponent(lifepercent)))
+                        .addGap(18, 18, 18)
+                        .addComponent(lifebar, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(savings2)
+                        .addComponent(savingspercent)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(housing2)
                         .addComponent(housingpercent))
                     .addComponent(housingbar, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(43, 43, 43)
-                .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(transport2)
-                        .addComponent(transportpercent))
-                    .addComponent(transportbar, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
-                .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(life2)
-                    .addComponent(lifepercent)
-                    .addComponent(lifebar, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(46, 46, 46)
-                .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(graphpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(savings2)
-                        .addComponent(savingspercent))
-                    .addComponent(savingsbar, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
 
         textpanel.setBackground(new java.awt.Color(153, 255, 153));
         textpanel.setBorder(javax.swing.BorderFactory.createMatteBorder(5, 5, 5, 5, new java.awt.Color(255, 255, 153)));
-
-        jLabel15.setText("jLabel15");
-
-        jLabel16.setText("jLabel16");
-
-        jLabel17.setText("jLabel17");
-
-        jLabel18.setText("jLabel18");
 
         javax.swing.GroupLayout textpanelLayout = new javax.swing.GroupLayout(textpanel);
         textpanel.setLayout(textpanelLayout);
         textpanelLayout.setHorizontalGroup(
             textpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(textpanelLayout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addGroup(textpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel18)
-                    .addComponent(jLabel17)
+                .addGroup(textpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(textpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, 347, Short.MAX_VALUE)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(housingoutput, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(transportoutput, javax.swing.GroupLayout.DEFAULT_SIZE, 532, Short.MAX_VALUE))
+                    .addComponent(lifeoutput, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(savingsoutput, javax.swing.GroupLayout.DEFAULT_SIZE, 545, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         textpanelLayout.setVerticalGroup(
             textpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(textpanelLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(jLabel15)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel16)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel17)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel18)
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addComponent(housingoutput)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(transportoutput)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lifeoutput)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(savingsoutput)
+                .addContainerGap(66, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -301,17 +299,16 @@ public class ad extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(inputpanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(graphpanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(textpanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(textpanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(inputpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(graphpanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(textpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(graphpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(textpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -344,7 +341,7 @@ public class ad extends javax.swing.JFrame {
         
         String housespace="", transportspace="", lifespace="", savingspace="";
         
-        for (int i = 0; i<=housingpercentage;i++){
+        for (int i = 1; i<=housingpercentage;i++){//creates bars and formats them to the labels
             housespace+=" ";
         }housingbar.setText(housespace);
         for (int i = 0;i<=transportpercentage;i++){
@@ -358,7 +355,26 @@ public class ad extends javax.swing.JFrame {
             System.out.println(i);
         }savingsbar.setText(savingspace);
         
-        
+        if (housingpercentage>35){//outputs weither or not the user's input is good or bad based on economic standards
+            housingoutput.setText("You're spending too much money on housing! Pay no more than 35% of your income towards housing");
+        } else if (housingpercentage<36){
+            housingoutput.setText("You're spending the right amount on housing!");
+        } 
+        if (transportpercentage>15){
+            transportoutput.setText("You spend too much on transport! Spend no more than 15% of your income on transportation!");
+        } else if(transportpercentage<=15){
+            transportoutput.setText("You're spending the right amount on transportation!");
+        } 
+        if (lifepercentage>25){
+            lifeoutput.setText("You're spending too much on \"life\". Spend no more than 25% of your income on life!");
+        } else if (lifepercentage<=25){
+            lifeoutput.setText("You're spending the right amount on life.");
+        } 
+        if (savingspercentage<10){
+            savingsoutput.setText("You need to invest more in your future. Put at least 10% of your income towards savings.");
+        }else if (savingspercentage>10){
+            savingsoutput.setText("Good job! You're investing enough in your savings.");
+        }
         
     }//GEN-LAST:event_enterActionPerformed
 
@@ -404,32 +420,32 @@ public class ad extends javax.swing.JFrame {
     private javax.swing.JLabel housingbar;
     private javax.swing.JTextField housinginput;
     private javax.swing.JLabel housinglabel;
+    private javax.swing.JLabel housingoutput;
     private javax.swing.JLabel housingpercent;
     private javax.swing.JTextField incomeinput;
     private javax.swing.JLabel incomelabel;
     private javax.swing.JLabel info;
     private javax.swing.JPanel inputpanel;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel life2;
     private javax.swing.JLabel lifebar;
     private javax.swing.JTextField lifeinput;
     private javax.swing.JLabel lifelabel;
+    private javax.swing.JLabel lifeoutput;
     private javax.swing.JLabel lifepercent;
     private javax.swing.JLabel p1title;
     private javax.swing.JLabel savinglabel;
     private javax.swing.JLabel savings2;
     private javax.swing.JLabel savingsbar;
     private javax.swing.JTextField savingsinput;
+    private javax.swing.JLabel savingsoutput;
     private javax.swing.JLabel savingspercent;
     private javax.swing.JPanel textpanel;
     private javax.swing.JLabel transport2;
     private javax.swing.JLabel transportbar;
     private javax.swing.JTextField transportinput;
     private javax.swing.JLabel transportlabel;
+    private javax.swing.JLabel transportoutput;
     private javax.swing.JLabel transportpercent;
     // End of variables declaration//GEN-END:variables
 }
